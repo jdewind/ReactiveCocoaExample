@@ -19,6 +19,10 @@
 		4B4BBD571895DC9F00C7FB83 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B4BBD3F1895DC9F00C7FB83 /* UIKit.framework */; };
 		4B4BBD5F1895DC9F00C7FB83 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4BBD5D1895DC9F00C7FB83 /* InfoPlist.strings */; };
 		4B4BBD611895DC9F00C7FB83 /* ReactiveCocoaExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4BBD601895DC9F00C7FB83 /* ReactiveCocoaExampleTests.m */; };
+		4B4BBD6D1895DD1D00C7FB83 /* UISearchBar+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4BBD6C1895DD1D00C7FB83 /* UISearchBar+RAC.m */; };
+		4B4BBD741895E0B900C7FB83 /* RACTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4BBD731895E0B900C7FB83 /* RACTableViewController.m */; };
+		4BC09BA51895E65A005F38AF /* UISearchDisplayController+RAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BC09BA41895E65A005F38AF /* UISearchDisplayController+RAC.m */; };
+		6007E754EF9C4E479BC23A90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBCDB97D06614376A4521D0E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,14 @@
 		4B4BBD5C1895DC9F00C7FB83 /* ReactiveCocoaExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReactiveCocoaExampleTests-Info.plist"; sourceTree = "<group>"; };
 		4B4BBD5E1895DC9F00C7FB83 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4B4BBD601895DC9F00C7FB83 /* ReactiveCocoaExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReactiveCocoaExampleTests.m; sourceTree = "<group>"; };
+		4B4BBD6B1895DD1D00C7FB83 /* UISearchBar+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchBar+RAC.h"; sourceTree = "<group>"; };
+		4B4BBD6C1895DD1D00C7FB83 /* UISearchBar+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchBar+RAC.m"; sourceTree = "<group>"; };
+		4B4BBD721895E0B900C7FB83 /* RACTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACTableViewController.h; sourceTree = "<group>"; };
+		4B4BBD731895E0B900C7FB83 /* RACTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACTableViewController.m; sourceTree = "<group>"; };
+		4BC09BA31895E65A005F38AF /* UISearchDisplayController+RAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISearchDisplayController+RAC.h"; sourceTree = "<group>"; };
+		4BC09BA41895E65A005F38AF /* UISearchDisplayController+RAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISearchDisplayController+RAC.m"; sourceTree = "<group>"; };
+		CBCDB97D06614376A4521D0E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5195153FDC34B60BA171C96 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 				4B4BBD3E1895DC9F00C7FB83 /* CoreGraphics.framework in Frameworks */,
 				4B4BBD401895DC9F00C7FB83 /* UIKit.framework in Frameworks */,
 				4B4BBD3C1895DC9F00C7FB83 /* Foundation.framework in Frameworks */,
+				6007E754EF9C4E479BC23A90 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,7 @@
 				4B4BBD5A1895DC9F00C7FB83 /* ReactiveCocoaExampleTests */,
 				4B4BBD3A1895DC9F00C7FB83 /* Frameworks */,
 				4B4BBD391895DC9F00C7FB83 /* Products */,
+				D5195153FDC34B60BA171C96 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +114,7 @@
 				4B4BBD3D1895DC9F00C7FB83 /* CoreGraphics.framework */,
 				4B4BBD3F1895DC9F00C7FB83 /* UIKit.framework */,
 				4B4BBD541895DC9F00C7FB83 /* XCTest.framework */,
+				CBCDB97D06614376A4521D0E /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +122,8 @@
 		4B4BBD411895DC9F00C7FB83 /* ReactiveCocoaExample */ = {
 			isa = PBXGroup;
 			children = (
+				4B4BBD711895E07E00C7FB83 /* Controllers */,
+				4B4BBD6A1895DD0000C7FB83 /* Extensions */,
 				4B4BBD4A1895DC9F00C7FB83 /* AOAppDelegate.h */,
 				4B4BBD4B1895DC9F00C7FB83 /* AOAppDelegate.m */,
 				4B4BBD4D1895DC9F00C7FB83 /* Images.xcassets */,
@@ -144,6 +161,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		4B4BBD6A1895DD0000C7FB83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4B4BBD6B1895DD1D00C7FB83 /* UISearchBar+RAC.h */,
+				4B4BBD6C1895DD1D00C7FB83 /* UISearchBar+RAC.m */,
+				4BC09BA31895E65A005F38AF /* UISearchDisplayController+RAC.h */,
+				4BC09BA41895E65A005F38AF /* UISearchDisplayController+RAC.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		4B4BBD711895E07E00C7FB83 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4B4BBD721895E0B900C7FB83 /* RACTableViewController.h */,
+				4B4BBD731895E0B900C7FB83 /* RACTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,9 +188,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4B4BBD641895DC9F00C7FB83 /* Build configuration list for PBXNativeTarget "ReactiveCocoaExample" */;
 			buildPhases = (
+				2738B7573C0C4F8FA1868E02 /* Check Pods Manifest.lock */,
 				4B4BBD341895DC9F00C7FB83 /* Sources */,
 				4B4BBD351895DC9F00C7FB83 /* Frameworks */,
 				4B4BBD361895DC9F00C7FB83 /* Resources */,
+				6FB36F7BFCE34A7290531F5A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -235,13 +274,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2738B7573C0C4F8FA1868E02 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FB36F7BFCE34A7290531F5A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4B4BBD341895DC9F00C7FB83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				4B4BBD4C1895DC9F00C7FB83 /* AOAppDelegate.m in Sources */,
+				4BC09BA51895E65A005F38AF /* UISearchDisplayController+RAC.m in Sources */,
 				4B4BBD481895DC9F00C7FB83 /* main.m in Sources */,
+				4B4BBD6D1895DD1D00C7FB83 /* UISearchBar+RAC.m in Sources */,
+				4B4BBD741895E0B900C7FB83 /* RACTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +434,7 @@
 		};
 		4B4BBD651895DC9F00C7FB83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5195153FDC34B60BA171C96 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -372,6 +448,7 @@
 		};
 		4B4BBD661895DC9F00C7FB83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5195153FDC34B60BA171C96 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -444,6 +521,7 @@
 				4B4BBD661895DC9F00C7FB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4B4BBD671895DC9F00C7FB83 /* Build configuration list for PBXNativeTarget "ReactiveCocoaExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +530,7 @@
 				4B4BBD691895DC9F00C7FB83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
